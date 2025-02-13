@@ -1,36 +1,30 @@
-# Pathanaseefkhan414.github.io
-
-
-Here is a sample `README.md` file for your Plagiarism Checker project:
-
-```markdown
 # Plagiarism Checker
 
 This is a simple Plagiarism Checker application where users can log in, sign up, and check the similarity between two texts. The app compares the inputted texts using basic substring matching logic and calculates a similarity percentage. It also highlights any matching words between the two texts.
 
 ## Features
 
-- **User Authentication**: Users can sign up and log in to use the plagiarism checker. 
-- **Plagiarism Checking**: Users can input two texts, and the app calculates the similarity between them.
-- **Similarity Percentage**: The app returns the percentage of similarity based on matched substrings.
-- **Matched Text**: The app displays the matched text between the two input texts.
-- **Logout**: Users can log out after using the app.
+- ** User Authentication **: Users can sign up and log in to use the plagiarism checker. 
+- ** Plagiarism Checking **: Users can input two texts, and the app calculates the similarity between them.
+- ** Similarity Percentage**: The app returns the percentage of similarity based on matched substrings.
+- ** Matched Text **: The app displays the matched text between the two input texts.
+- ** Logout **: Users can log out after using the app.
 
 ## Technologies Used
 
-- **HTML**: Markup for the structure of the pages.
-- **CSS**: Basic styling for the layout of the app (linked in `style.css`).
-- **JavaScript**: Logic for user authentication, text comparison, and similarity calculation.
-- **localStorage**: Used for storing user credentials for a demo signup and login process.
+- ** HTML **: Markup for the structure of the pages.
+- ** CSS **: Basic styling for the layout of the app (linked in `style.css`).
+- ** JavaScript **: Logic for user authentication, text comparison, and similarity calculation.
+- ** localStorage **: Used for storing user credentials for a demo signup and login process.
 
 ## Files Structure
 
-- **index.html**: Main page where the plagiarism checker tool resides.
-- **login.html**: Login page for users to sign in.
-- **signup.html**: Signup page for new users to create an account.
-- **auth.js**: Contains JavaScript functions for user authentication (signup, login, logout).
-- **script.js**: Contains the logic to check for plagiarism by calculating the similarity between two texts.
-- **style.css**: Stylesheet for page layouts and design.
+- ** index.html **: Main page where the plagiarism checker tool resides.
+- ** login.html **: Login page for users to sign in.
+- ** signup.html **: Signup page for new users to create an account.
+- ** auth.js **: Contains JavaScript functions for user authentication (signup, login, logout).
+- ** script.js **: Contains the logic to check for plagiarism by calculating the similarity between two texts.
+- ** style.css **: Stylesheet for page layouts and design.
 
 ## Getting Started
 
