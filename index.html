@@ -9,18 +9,46 @@
 <body>
     <div class="container">
         <h1>Plagiarism Checker</h1>
+
+        <!-- Check if user is logged in -->
+        <div id="auth-status"></div>
+
         <div class="form-container">
             <textarea id="text1" placeholder="Enter text to check for plagiarism..." rows="6"></textarea>
             <textarea id="text2" placeholder="Enter text to compare against..." rows="6"></textarea>
             <button onclick="checkPlagiarism()">Check Similarity</button>
         </div>
+
         <div id="result-container" class="result-container">
             <h2>Results</h2>
             <p id="similarity">Please enter two texts to check similarity.</p>
             <p id="matched-text"></p>
         </div>
+
+        <button id="logout-btn" onclick="logout()">Logout</button>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Check if the user is logged in
+        function checkLoginStatus() {
+            const username = localStorage.getItem('username');
+            if (!username) {
+                window.location.href = 'login.html'; // Redirect to login if not logged in
+            } else {
+                document.getElementById('auth-status').innerHTML = `<p>Welcome, ${username}!</p>`;
+            }
+        }
+
+        // Logout function
+        function logout() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('password');
+            alert('You have logged out!');
+            window.location.href = 'login.html'; // Redirect to login page
+        }
+
+        checkLoginStatus(); // Call to check login on page load
+    </script>
 </body>
 </html>
